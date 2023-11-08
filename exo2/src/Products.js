@@ -1,6 +1,20 @@
 function Products() {
     const productsFromDb = [
-        "pasteque", "melon", "pasteque" , "orange"
+        {
+            title: "aspirateur" ,
+            price:20 ,
+            IsPublished:true,
+        },
+        {
+            title: "canne a peche" ,
+            price:150 ,
+            IsPublished: true,
+        },
+        {
+            title:"casque de mobilette",
+            price:80 ,
+            IsPublished: true,
+        }
      ]
 
 
@@ -13,7 +27,8 @@ function Products() {
          return(
             // je retourne un article avec un titre qui contient a chaque fois une var de mon tableau
             <article>
-                <h2>{product}</h2>
+                <h2>{product.title}  </h2>
+                <li>{product.price} euros</li>
             </article>
          )
         })}
