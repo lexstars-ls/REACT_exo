@@ -1,6 +1,22 @@
 function Products() {
+    const productsFromDb = [
+        "pasteque", "melon", "pasteque" , "orange"
+     ]
+
+
+
     return (   
-        <div>     
+         
+        <>     
+        {/* // je boucle mon tableau avec le param product  */}
+        {productsFromDb.map((product)=>{
+         return(
+            // je retourne un article avec un titre qui contient a chaque fois une var de mon tableau
+            <article>
+                <h2>{product}</h2>
+            </article>
+         )
+        })}
         <p>Mes Products</p>  
         <ul>
             <li>
@@ -13,7 +29,7 @@ function Products() {
                 Troisième product 
             </li>
         </ul>   
-        </div>  
+        </>  
     )
 } 
 
