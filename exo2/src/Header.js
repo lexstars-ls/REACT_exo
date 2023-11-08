@@ -1,3 +1,4 @@
+const yourName = true;
 
 function Header() {
     return (
@@ -8,6 +9,8 @@ function Header() {
                 <li>Accueil</li>
                 <li>Home</li>                
                 <li>Contact</li>
+
+                {yourName ? <li>Bonjour Lucas</li> : <li>Veuillez vous connecter</li>}
             </ul>
         </nav>
         </header>
