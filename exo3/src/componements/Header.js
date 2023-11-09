@@ -1,4 +1,4 @@
-import Profil from "./Profil";
+import Profil from "../Profil";
 
 
 function Header() {

@@ -1,5 +1,5 @@
-import Header from './Header'
-import Footer from './Footer';
+import Header from '../componements/Header'
+import Footer from '../componements/Footer';
 
 function Home() {
     const articles = [
