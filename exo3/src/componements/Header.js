@@ -1,5 +1,5 @@
 import Profil from "../Profil";
-
+import { Link } from "react-router-dom";
 
 function Header() {
     return (
@@ -15,7 +15,7 @@ function Header() {
             Nos gateaux
           </li>
           <li>
-           Votre panier
+          <Link to="/contact">Contact</Link>
           </li>
           <Profil/>
         </ul>
