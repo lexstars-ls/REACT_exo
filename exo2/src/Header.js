@@ -1,8 +1,8 @@
-
+import ItemCartInMenu from './ItemCartMenu'
 
 function Header() {
     const yourName = true;
-    const itemInCart = 2;
+    
 
    const userLog = {
     lastname : "kiwi",
@@ -20,7 +20,7 @@ function Header() {
                 <li>Accueil</li>
                 <li>Home</li>                
                 <li>Contact</li>
-                {itemInCart >0? <li> votre panier contient :{itemInCart}</li> : <li>Pas d'item aouter</li>}
+               <ItemCartInMenu/>
                
             </ul>
         </nav>

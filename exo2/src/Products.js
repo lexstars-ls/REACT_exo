@@ -26,7 +26,7 @@ function Products() {
             {productsFromDb.map((product) => {
                 return (
                     <>
-
+                    
                         {product.isPublished && (
                             <>
                                 <h2>{product.title}</h2>
