@@ -1,3 +1,6 @@
+import Header from './Header'
+import Footer from './Footer';
+
 function Home() {
     const articles = [
         {
@@ -69,6 +72,9 @@ function Home() {
     const articleFiltered = publishedArticle.slice(-3)
 // a travailler
     return (
+        <>
+         <Header />
+       
         <main>
             {/* on dit a notre fonction de retourner toute les valeurs du tavleau articleFiltered avec un map(param article) */}
           {articleFiltered.map((article) => {
@@ -80,6 +86,9 @@ function Home() {
             );
           })}
         </main>
+        <Footer />
+        </>
+
       );
 }           
 
