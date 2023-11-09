@@ -9,11 +9,14 @@ function Header() {
      <nav>
         <ul>
           <li>
-            Nos pains
+          <Link to="/">Home</Link>
           </li>
+
+
           <li>
-            Nos gateaux
+            <Link to="/articles">Nos Articles</Link>
           </li>
+          
           <li>
           <Link to="/contact">Contact</Link>
           </li>
