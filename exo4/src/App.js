@@ -6,6 +6,7 @@ import Poneys from './page/Poneys'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Info from './page/Footer'
 import Contact from './page/Contact'
+import PoneyTalk from './page/Poneytalk';
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
     <Route path="/poneys" element={<Poneys />} />
     <Route path="/info" element={<Info />} />
     <Route path="/contact" element={<Contact />} />
+    <Route path="/click" element={<PoneyTalk />} />
     </Routes>
     </BrowserRouter>
     

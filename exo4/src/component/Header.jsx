@@ -22,6 +22,11 @@ function Header() {
                         <Link to="/contact">Contact</Link>
                     </li>
 
+                    <li>
+                        <Link to="/click">Poney qui click</Link>
+                    </li>
+
+
                 </ul>
             </nav>
         </header>

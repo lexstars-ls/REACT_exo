@@ -6,6 +6,8 @@ function Contact() {
     }
 
     return (
+        <>
+        <Header/>
         <form onSubmit={handleSubmit}>
             <ul>
                 <li><label at="name">Nom&nbsp;:</label>
@@ -20,6 +22,7 @@ function Contact() {
             </ul>
             <button type="submit">Submit</button>
         </form>
+        </>
     );
 }
 
