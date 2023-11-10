@@ -16,7 +16,7 @@ function Header() {
           <li>
             <Link to="/articles">Nos Articles</Link>
           </li>
-          
+
           <li>
           <Link to="/contact">Contact</Link>
           </li>
