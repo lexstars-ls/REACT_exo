@@ -1,4 +1,4 @@
-import Header from "../componements/Header";
+import Header from "../component/Header";
 
 function Poneys(){
     const poneys = [

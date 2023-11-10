@@ -1,4 +1,4 @@
-import Header from '../componements/Header'
+import Header from '../component/Header'
 import '../style/home.scss'
 import Footer from '../page/Footer'
 function Home (){
