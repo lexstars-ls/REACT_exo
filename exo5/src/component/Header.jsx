@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import '../style/header.scss'
 function Header() {
     return (
         <header>
@@ -7,7 +7,7 @@ function Header() {
             <nav>
 
                 <ul>
-                   
+                    <img src="https://logowik.com/content/uploads/images/pokemon4400.logowik.com.webp" alt="" />
                     <li>
                         <Link to="/">Home</Link>
                     </li>

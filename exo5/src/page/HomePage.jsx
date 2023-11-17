@@ -1,5 +1,5 @@
 import Header from '../component/Header'
-
+import '../style/main.scss'
 function HomePage (){
     const pokemons = [
         {
@@ -81,7 +81,7 @@ return(
          return(
             <article>
                 <h2> {pokemon.name} </h2>
-                
+                <img src={pokemon.img} alt="" />
             </article>
          )
 

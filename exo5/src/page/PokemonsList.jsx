@@ -1,5 +1,5 @@
 import Header from '../component/Header'
-
+import '../style/main.scss'
 function PokemonsList(){
     const pokemons = [
         {
@@ -72,9 +72,12 @@ function PokemonsList(){
 
         {pokemons.map((pokemon)=>{
             return(
+              <main>
                 <article>
                     <h2> {pokemon.name} </h2>
+                    <img src={pokemon.img} alt="" />
                 </article>
+                </main>
             )
         })}
         </>
