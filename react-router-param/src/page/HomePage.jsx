@@ -20,7 +20,8 @@ function Home() {
 
   return (
     <>
-      <Header />
+    {/* je donne une valeur a mon param */}
+      <Header pageTitle={"mon header title"} />
       <main>
         <section>
           <h2>Les trois derniers produits cuisine : </h2>
