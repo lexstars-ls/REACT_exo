@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Header from "../component/Header";
 import { products } from "../utils/products-utils";
+import Sidebar from '../component/Sidebar'
 function Home() {
  
 
@@ -22,6 +23,7 @@ function Home() {
     <>
     {/* je donne une valeur a mon param */}
       <Header pageTitle={"mon header title"} />
+      <Sidebar currentPage={"HomePage"}/>
       <main>
         <section>
           <h2>Les trois derniers produits cuisine : </h2>

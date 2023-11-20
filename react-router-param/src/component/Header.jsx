@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 // 
 // définition d'un param pour la function header
-function Header({pageTitle}) {
+function Header({pageTitle , currentPage}) {
+
   return (
     <header>
       <img
@@ -14,7 +15,8 @@ function Header({pageTitle}) {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            
+            <Link to="/"> <strong>Home</strong></Link>
           </li>
           <li>
             <Link to="/products">Products</Link>

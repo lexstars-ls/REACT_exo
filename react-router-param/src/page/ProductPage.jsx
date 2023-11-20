@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import Header from "../component/Header";
 import { products } from "../utils/products-utils";
+import Sidebar from '../component/Sidebar'
 function ProductPage() {
   const { id } = useParams();
 
@@ -19,7 +20,9 @@ function ProductPage() {
 
   return (
     <>
-      <Header />
+      <Header pageTitle={ "vous consulter un produit"} />
+      <Sidebar currentPage={"productDetailPage"} PartName={productFound.title}/>
+      
       <main>
         {productFound ? (
           <article>
