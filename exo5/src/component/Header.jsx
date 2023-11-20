@@ -1,28 +1,26 @@
 import { Link } from "react-router-dom";
-import '../style/header.scss'
+
 function Header() {
-    return (
-        <header>
-            <h1>Pikachu est trop moche en évo</h1>
-            <nav>
+  return (
+    <header>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg"
+        alt="logo pokemon"
+      />
+      <h1>Le meilleur pokedex pour devenir le meilleur dresseur.e</h1>
 
-                <ul>
-                    <img src="https://logowik.com/content/uploads/images/pokemon4400.logowik.com.webp" alt="" />
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-
-
-                    <li>
-                        <Link to="/pokemons">Tous les pokémons</Link>
-                    </li>
-              
-
-
-                </ul>
-            </nav>
-        </header>
-    )
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/pokemons">Pokemons</Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
 }
 
-export default Header
+export default Header;
