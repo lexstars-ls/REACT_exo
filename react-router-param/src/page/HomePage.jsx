@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "../component/Header";
 import { products } from "../utils/products-utils";
 import Sidebar from '../component/Sidebar'
+import ProductCard from "../component/ProductCard";
 function Home() {
  
 
@@ -25,21 +26,17 @@ function Home() {
       <Header pageTitle={"mon header title"} />
       <Sidebar currentPage={"HomePage"}/>
       <main>
+        {/* ici, dans les boucles 3 derniers produits, chaque element de boucle
+             va etre recuperé et ajouter a ProductCard qui va remplir ce composant */}
         <section>
           <h2>Les trois derniers produits cuisine : </h2>
 
           {lastPublishedKitchenProducts.map((product) => {
-            return (
-              <article>
-                <h3>{product.title}</h3>
-                <p>{product.price}</p>
-                <Link to={`/products/${product.id}`}>
-                  <button>Voir le produit</button>
-                </Link>
-              </article>
-            );
+            return <ProductCard productToDisplay={product} />;
           })}
+
         </section>
+
         <section>
           <h3>Produits les moins chers : </h3>
           {cheapestProducts.map((product) => {
