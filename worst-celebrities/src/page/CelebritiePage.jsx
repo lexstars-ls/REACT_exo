@@ -15,6 +15,7 @@ const celebrityFound = shittyStars.find((celebrity)=>{
      <>
          <Header />
          <div>
+           
              {celebrityFound ? (
                  <article>
                      <h2>biographie</h2>
@@ -29,6 +30,5 @@ const celebrityFound = shittyStars.find((celebrity)=>{
          
      </>
  )
-
 }
 export default CelebritiePage

@@ -9,7 +9,7 @@ function CelebritiesPage() {
 
     return (
         <>
-            <Header />
+            <Header currentPage={"celebrities"} />
             
 
             <main>

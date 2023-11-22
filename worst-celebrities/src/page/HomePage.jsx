@@ -15,7 +15,7 @@ const lastPublishedValidateCelebrity = validateCelebrity.slice(-3);
     return(
         
     <>
-    <Header/>
+    <Header currentPage={"homePage"} />
     <main>
       <p>je suis la Home page</p>
       
