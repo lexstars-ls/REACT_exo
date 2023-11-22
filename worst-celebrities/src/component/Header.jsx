@@ -43,7 +43,17 @@ function Header({currentPage}) {
               </strong>
             ) : (
               <Link to="/copyrigthpage">copyrigth</Link>
-            )}
+            )}   
+          </li>
+
+          <li>
+            {currentPage === "formulaire" ? (
+              <strong>
+                <Link to="/formulairepage">formulaire</Link>
+              </strong>
+            ) : (
+              <Link to="/formulairepage">formulaire</Link>
+            )}   
           </li>
         </ul>
       </nav>

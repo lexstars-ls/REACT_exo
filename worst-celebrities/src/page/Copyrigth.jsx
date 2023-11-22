@@ -3,16 +3,16 @@ import { useState } from "react"
 import Header from "../component/Header"
 function Copyrigth () {
 
-    // variable qui a 2 param display texte qui est le texte (affichage) et setDispt qui définit l'état du texte en rechageant le composant
+    // variable qui a 2 param display texte qui est le texte (affichage) et setDispt qui définit l'état du texte en rechargeant le composant
 const [displayText, setDisplayText] = useState(true);  
 const handleButtonClick = ()=>{
-    // variable qui modifie l'état de display test via setdisplayt apres le click sur le bouton (onclcik param handlebutton)
+    // variable qui modifie l'état de display text via setdisplayt apres le click sur le bouton (onclcik param handlebutton)
  setDisplayText(!displayText)
 //  a chaque click le composant est rechargé et change en fonction de son état (true = affichage false = pas d'affichage)
 };
     return (
         <>
-        <Header/>
+        <Header currentPage={"copyrigth"}/>
         <main>
             {/* displayText (valeur qui est affiché ou non) */}
         { displayText &&<h2>uwu tu es cringe</h2>}

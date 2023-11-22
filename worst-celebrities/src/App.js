@@ -4,6 +4,7 @@ import CelebritiesPage from "./page/CelebritiesPage";
 import CelebritiePage from "./page/CelebritiePage";
 import TvSpeakersPage from "./page/TvSpeakersPage";
 import Copyrigth from "./page/Copyrigth";
+import Formulaire from "./page/Formulaire";
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ function App() {
         <Route path="/celebritypage/:id" element ={< CelebritiePage/>}  />
         <Route path="/speakerspage" element ={< TvSpeakersPage/>}  />
         <Route path="/copyrigthpage" element ={< Copyrigth/>}  />
+        <Route path="/formulairepage" element ={< Formulaire/>}  />
 
       
       </Routes>
