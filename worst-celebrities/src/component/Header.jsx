@@ -35,6 +35,16 @@ function Header({currentPage}) {
               <Link to="/speakerspage">les speakers de merde</Link>
             )}
           </li>
+
+          <li>
+            {currentPage === "copyrigth" ? (
+              <strong>
+                <Link to="/copyrigthpage">copyrigth</Link>
+              </strong>
+            ) : (
+              <Link to="/copyrigthpage">copyrigth</Link>
+            )}
+          </li>
         </ul>
       </nav>
     </header>

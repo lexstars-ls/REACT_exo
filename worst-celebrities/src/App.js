@@ -3,6 +3,7 @@ import HomePage from "./page/HomePage";
 import CelebritiesPage from "./page/CelebritiesPage";
 import CelebritiePage from "./page/CelebritiePage";
 import TvSpeakersPage from "./page/TvSpeakersPage";
+import Copyrigth from "./page/Copyrigth";
 function App() {
   return (
     <BrowserRouter>
@@ -13,7 +14,9 @@ function App() {
         <Route path="/celebritypage" element ={<CelebritiePage/>}  />
         <Route path="/celebritypage/:id" element ={< CelebritiePage/>}  />
         <Route path="/speakerspage" element ={< TvSpeakersPage/>}  />
+        <Route path="/copyrigthpage" element ={< Copyrigth/>}  />
 
+      
       </Routes>
     </BrowserRouter>
 
