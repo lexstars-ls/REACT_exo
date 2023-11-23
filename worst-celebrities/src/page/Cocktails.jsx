@@ -1,20 +1,35 @@
 import Header from "../component/Header";
+import { useState } from "react";
 
 
 function Cocktails (){
-       // Je déclare mon fetch déf par le lien
-       fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=")
-       // Response est le temps de traitement de la bdd (fetch)
-       .then(response => response.json())
-       // quand toutes les données sont récupérés elles sont ensuite affichés dans le console log
-       .then(data => console.log(data))
-   
-    
+    // je déclare mon state pour récuperer mon API
+    const [cocktails, setCocktails] = useState(null);
+
+    if (!cocktails) {
+        fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=")
+            .then((response) => response.json())
+            // .then(response => response.json())     .then recueille les données puis les données (response) sont traduites en .son (response.json)
+            .then((json) => {
+                console.log(json);
+                setCocktails(json.drinks);
+            });
+    }
     return (
-        <>
-        <Header currentPage={"boisson"}/>
-        </>
-    )
+        <main>
+            {cocktails ? (
+                <>
+                    <article>Cocktails frais et prêts:</article>
+                    {cocktails.map((cocktail) => (
+                        <div key={cocktail.idDrink}>                            
+                            <h2>{cocktail.strDrink}</h2>
+                            <img src= {cocktail.strDrinkThumb} alt="" />
+                        </div>
+                    ))}
+                </>
+            ) : null}
+        </main>
+    );
 }
 
 export default Cocktails
