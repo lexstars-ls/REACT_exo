@@ -6,6 +6,7 @@ import TvSpeakersPage from "./page/TvSpeakersPage";
 import Copyrigth from "./page/Copyrigth";
 import Formulaire from "./page/Formulaire";
 import LikePage from "./page/LikePages";
+import CockTails from "./page/Cocktails";
 function App() {
   return (
     <BrowserRouter>
@@ -19,6 +20,8 @@ function App() {
         <Route path="/copyrigthpage" element ={< Copyrigth/>}  />
         <Route path="/formulairepage" element ={< Formulaire/>}  />
         <Route path="/likepage" element ={< LikePage/>}  />
+        <Route path="/cocktailspage" element ={< CockTails/>}  />
+        
 
       
       </Routes>
