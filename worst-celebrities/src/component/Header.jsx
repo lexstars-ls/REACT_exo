@@ -55,6 +55,16 @@ function Header({currentPage}) {
               <Link to="/formulairepage">formulaire</Link>
             )}   
           </li>
+
+          <li>
+            {currentPage === "like" ? (
+              <strong>
+                <Link to="/likepage">page de like</Link>
+              </strong>
+            ) : (
+              <Link to="/likepage">page de like</Link>
+            )}   
+          </li>
         </ul>
       </nav>
     </header>
